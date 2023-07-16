@@ -1,5 +1,6 @@
 # 2. URI, 웹브라우저 요청 흐름, HTTP 메시지 전송 흐름
 <br/>
+
 ## URI
 
 - URI( Uniform Resource Identifier )
@@ -8,12 +9,14 @@
   - Identifier : 다른 항목과 구분하는데 필요한 정보
   - URI는 리소스를 식별하는 통합된 방법
 <br/><br/><br/>
+
 ## URI의 종류
 - URI는 URL과 URN을 포함한다.
 
 ![사진1](https://github.com/KimYongJ/HTTPStudy/assets/106525587/b2bb84ec-a054-46b5-a2d1-5e599ebe8371)
 
 <br/><br/><br/>
+
 ## URL
 
 - URL( Uniform Resource Locator )
@@ -37,6 +40,7 @@
   - Fragment
     html 내부에서 북마크 등에 사용되고 서버에 전송하는 정보는 아니다. 자주 사용되지 않음
 <br/><br/><br/>
+
 ## URN
 
 - URN( Uniform Resource Name )
@@ -44,6 +48,7 @@
   - 리소스의 위치(URL)는 변할 수 있지만 리소스의 이름(URN)은 변하지 않는다.
   - URN(리소스 이름)만으로 실제 리소스를 찾을 수 있는 방법이 보편화되어 있지 않기 때문에 잘 사용되지 않는다.
 <br/><br/><br/>
+
 ## 웹브라우저의 요청 흐름 , HTTP 메시지 전송 흐름
 ![사진2](https://github.com/KimYongJ/HTTPStudy/assets/106525587/6f66c2f4-934e-4117-8221-133ef07ec507)
 
