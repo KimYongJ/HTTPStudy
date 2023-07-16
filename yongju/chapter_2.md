@@ -51,7 +51,8 @@
 2. 웹브라우저에서 DNS에 호스트명을 조회하고 해당 호스트명을한 서버의 IP 주소를 얻는다.
 3. 포트를 확인한다.
 4. 그 후 HTTP 요청 메시지를 생성한다.
-    - HTTP 요청 메시지 형식    GET /search?q=yongju&hl=ko HTTP/1.1Host:www.google.com
+    - HTTP 요청 메시지 형식
+    - GET /search?q=yongju&hl=ko HTTP/1.1Host:www.google.com
 
 5. Socket 라이브러리를 통해 TCP/IP 계층에 데이터를 전달한다. 전달할 때 3 Way HandShacke를 통해 서버와 연결을 확인한 후 TCP/IP 계층에 데이터를 전달한다.
 6. TCP/IP 계층에서 패킷을 생성하며 생성시 전달받은 HTTP 요청 메시지를 담는다.
@@ -59,12 +60,12 @@
 8. 서버에서 요청에 따른 HTTP 응답 메시지를 만들어 낸다.
 
     - HTTP 응답 메시지 형식
-      HTTP/1.1 200 OK
-      Content-Type: text/html;charset=UTF-8 ( html 형식이며, 문자형식은 utf8이라는 정보 )
-      Content-Length: 3423 ( 실제 html 데이터의 길이 )
-      <html>
-          <body>...</body>
-      </html>
+    -  HTTP/1.1 200 OK
+    -  Content-Type: text/html;charset=UTF-8 ( html 형식이며, 문자형식은 utf8이라는 정보 )
+    -  Content-Length: 3423 ( 실제 html 데이터의 길이 )
+    -  <html>
+    -      <body>...</body>
+    -  </html>
 
 9. 서버에서 HTTP 응답 메시지를 웹브라우저에 전달한다.
 10. 웹브라우저가 HTTP 응답 메시지를 수신하고 해석한 후 화면에 보여준다.
