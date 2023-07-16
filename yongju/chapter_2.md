@@ -10,6 +10,7 @@
 <br/><br/><br/><br/>
 ## URI의 종류
 - URI는 URL과 URN을 포함한다.
+
 ![사진1](https://github.com/KimYongJ/HTTPStudy/assets/106525587/b2bb84ec-a054-46b5-a2d1-5e599ebe8371)
 
 <br/><br/><br/><br/>
@@ -50,13 +51,14 @@
 2. 웹브라우저에서 DNS에 호스트명을 조회하고 해당 호스트명을한 서버의 IP 주소를 얻는다.
 3. 포트를 확인한다.
 4. 그 후 HTTP 요청 메시지를 생성한다.
+
        HTTP 요청 메시지 형식
        GET /search?q=yongju&hl=ko HTTP/1.1Host:www.google.com
 
-5. Socket 라이브러리를 통해 TCP/IP 계층에 데이터를 전달한다. 전달할 때 3 Way HandShacke를 통해 서버와 연결을 확인한 후 TCP/IP 계층에 데이터를 전달한다.
-6. TCP/IP 계층에서 패킷을 생성하며 생성시 전달받은 HTTP 요청 메시지를 담는다.
-7. 서버에서 패킷을 수신한다. 서버에서 수신할 때 TCP/IP 부분을 제외하고 전달된 HTTP 요청 메시지를 해석한다.
-8. 서버에서 요청에 따른 HTTP 응답 메시지를 만들어 낸다.
+6. Socket 라이브러리를 통해 TCP/IP 계층에 데이터를 전달한다. 전달할 때 3 Way HandShacke를 통해 서버와 연결을 확인한 후 TCP/IP 계층에 데이터를 전달한다.
+7. TCP/IP 계층에서 패킷을 생성하며 생성시 전달받은 HTTP 요청 메시지를 담는다.
+8. 서버에서 패킷을 수신한다. 서버에서 수신할 때 TCP/IP 부분을 제외하고 전달된 HTTP 요청 메시지를 해석한다.
+9. 서버에서 요청에 따른 HTTP 응답 메시지를 만들어 낸다.
 
         HTTP 응답 메시지 형식
         HTTP/1.1 200 OK
