@@ -23,12 +23,15 @@
 - 위에서 만든 리소스 URI는 모두 같다. 이를 통해 무엇을 할지 '행위(메서드)' 자체는 따로 명시해준다.
   - 행위(메서드) 종류 : GET, POST, PUT, PATCH, DELETE
 
+<br/><br/><br/><br/>
+
 ## HTTP 메서드 - GET, POST, PUT, PATCH, DELETE
 
 ### GET
 
 - 리소스 조회로 서버에 전달하고 싶은 데이터는 query(쿼리 파라미터, 쿼리 스트링)를 통해 전달한다. 메시지 바디를 사용해서 데이터를 전달할 수 있으나 지원하지 않는 곳이 많아서 권장하지 않음
-- 형태 : GET /search?q=hello&hl=ko HTTP/1.1 Host: www.naver.com
+- 형태
+        GET /search?q=hello&hl=ko HTTP/1.1 Host: www.naver.com
 
 ### POST
 
@@ -92,6 +95,8 @@
 - OPTIONS : 대상 리소스에 대한 통신 가능 옵션(메서드)을 설명(주로 CORS에서 사용)
 - CONNECT : 대상 자원으로 식별되는 서버에 대한 터널을 설정
 - TRACE : 대상 리소스에 대한 경로를 따라 메시지 루프백 테스트를 수행
+
+<br/><br/><br/><br/>
 
 ## HTTP 메서드의 속성
 
