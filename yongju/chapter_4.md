@@ -105,7 +105,8 @@
 
 ## HTTP 메서드의 속성
 
-사진1
+<img width="756" alt="사진1" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/8830f6bb-6876-47dd-888a-9cb417ef8394">
+
 
 - 안전(Safe)의 의미
   - 호출해도 리소스를 변경하지 않는다.
