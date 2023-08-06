@@ -30,7 +30,6 @@
 ### GET
 
 - 리소스 조회로 서버에 전달하고 싶은 데이터는 query(쿼리 파라미터, 쿼리 스트링)를 통해 전달한다. 메시지 바디를 사용해서 데이터를 전달할 수 있으나 지원하지 않는 곳이 많아서 권장하지 않음
-- 형태
 
        [ 형태 ]
        GET /search?q=hello&hl=ko HTTP/1.1 Host: www.naver.com
@@ -39,13 +38,15 @@
 
 - POST는 단순히 데이터를 등록하는 것에 쓰인다기보다는, 대상 리소스가 고유한 의미 체계에 따라 요청에 포함된 표현을 처리하도록 한다. 주로 전달된 데이터로 신규 리소스 등록, 프로세스 처리에 사용
 - 메시지 전달 방법 : 메시지 바디를 통해 서버로 요청 데이터를 전달한다. 데이터를 받은 서버에서는 요청 데이터를 처리함(서버는 메시지 바디를 통해 들어온 데이터를 처리하는 모든 기능을 수행한다.)
-- 형태
-  POST /members HTTP/1.1
-  Content-Type: application/json
-  {
-  "username": "hello",
-  "age": 20
-  }
+
+       [ 형태 ]
+        POST /members HTTP/1.1
+        Content-Type: application/json
+        {
+           "username": "hello",
+           "age": 20
+        }
+  
 - POST 사용 예시
   - HTML 양식에 입력 된 필드와 같은 데이터 블록을 데이터 처리 프로세스에 제공
     - 예)HTML FORM에 입력한 정보로 회원 가입, 주문 등에서 사용
@@ -71,13 +72,14 @@
 - 용도 : 리소스를 완전히 대체(UPDATE), 해당 리소스가 없으면 생성
   - 리소스 대체 설명 : 기존 데이터가 username과 age가 있었다면, PUT메서드를 통해 age만 20으로 요청할 경우 username이 삭제 되고, age만 20으로 저장된다. 이것이 기존 리소스를 완전히 대체한다는 의미 이다.
 - POST와의 차이점 : 클라이언트가 리소스 위치를 알고 URI를 지정한다(/members/100). 클라이언트가 리소스를 식별함.
-- 형태
-  PUT /members/100 HTTP/1.1
-  Content-Type: application/json
-  {
-  "username":"hello",
-  "age":20
-  }
+
+      [ 형태 ]
+       PUT /members/100 HTTP/1.1
+       Content-Type: application/json
+       {
+          "username":"hello",
+          "age":20
+       }
 
 ### PATCH
 
@@ -87,9 +89,10 @@
 ### DELETE
 
 - 리소스 삭제
-- 형태
-  DELETE /members/100 HTTP/1.1
-  Host: localhost:8080
+- 
+      [ 형태 ]
+       DELETE /members/100 HTTP/1.1
+       Host: localhost:8080
 
 ### 기타 메서드들
 
