@@ -62,7 +62,7 @@
 - 방법 3. 파일 데이터 전송
   - HTML Form 전송에서 파일 전송시 쓰는 타입 : multipart/form-data
   - multipart/form-data 작성시 웹브라우저가 그에 맞는 Content-Type을 생성한다.
-  - 
+    
 <br/><br/>
 
 - HTML Form 데이터 전송 정리
