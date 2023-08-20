@@ -17,12 +17,12 @@
 - POST - 신규 자원 등록 특징
   - 컬렉션(Collection)
     - 서버가 관리하는 리소스 디렉토리를 의미한다.
-      - 서버가 리소스의 URI를 생성하고 관리
-      - 위 예시에서 컬렉션은 /members
-      - 서버가 새로 등록된 리소스의 URI를 생성해준다.
-      - HTTP/1.1 201 Created Location: /members/100
-      - 클라이언트는 등록될 리소스의 URI를 모른다.
-      - 회원 등록 /members -> URI는 /members이고 POST방식으로 단순히 전달
+    - 서버가 리소스의 URI를 생성하고 관리
+    - 위 예시에서 컬렉션은 /members
+    - 서버가 새로 등록된 리소스의 URI를 생성해준다.
+    - HTTP/1.1 201 Created Location: /members/100
+    - 클라이언트는 등록될 리소스의 URI를 모른다.
+    - 회원 등록 /members -> URI는 /members이고 POST방식으로 단순히 전달
 
 <br/>
 
