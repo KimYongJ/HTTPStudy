@@ -24,7 +24,8 @@
 - 이미지, 정적 텍스트 문서
 - 조회는 GET 사용
 - 정적 데이터는 일반적으로 쿼리 파라미터 없이 리소스 경로로 단순하게 조회 가능
-- 사진(1)
+<img width="831" alt="사진1" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/dd5e7200-85a8-484d-9ff2-51226b842167">
+
 - 단순히 이미지만 받고 싶을 때 url(리소스경로)만 보내면 서버에서 데이터를 클라이언트에게 바로 내려준다.
 
 <br/>
@@ -34,7 +35,7 @@
 - 주로 검색, 게시판 목록에서 정렬 필터(검색어)
 - 조회 결과를 줄여주는 필터, 조회 결과를 정렬하는 정렬 조건에 주로 사용함
 - 조회는 GET 형태이며 쿼리 파라미터를 사용해 데이터를 전달함 ex) /search?q=hello&hl=ko
-- 사진(2)
+<img width="822" alt="사진2" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/d4c8ccf0-25a1-4f20-8805-bc53267fca76">
 
 <br/>
 
@@ -42,12 +43,14 @@
 
 - 방법 1. POST 전송 - 저장
 
-  - 사진(3)
+<img width="859" alt="사진3" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/4b359381-b37c-4852-9008-727784c2e218">
+
   - HTML Form으로 데이터 전송시 method가 POST면 웹브라우저가 메시지 바디에 데이터를 넣는다.
 
 - 방법 2. GET 전송 - 저장
 
-  - 사진(4)
+<img width="833" alt="사진4" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/a750384f-a9e3-47de-a10a-558cf1f9f277">
+
   - HTML Form으로 데이터 전송시 method를 GET으로 할 경우 웹브라우저가 데이터를 쿼리파라미터에 넣는다.
   - 주의 : GET은 조회에서만 사용해야하며 리소스 변경이 발생하는 곳에 사용하면 안된다.
 
@@ -55,7 +58,8 @@
 
   - HTML Form 전송에서 파일 전송시 쓰는 타입 : multipart/form-data
   - multipart/form-data 작성시 웹브라우저가 그에 맞는 Content-Type을 생성한다.
-  - 사진 (5)
+ <img width="824" alt="사진5" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/4bffc25d-3c7f-47b9-a5b1-68edeb0cff5b">
+
 
 - HTML Form 데이터 전송 정리
 
