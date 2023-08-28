@@ -38,7 +38,8 @@
       - 아래 사진은 PRG 사용 전의 흐름이다.
         <img width="1065" alt="사진4" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/f26d1c7b-69dd-4200-97a0-d26844c6aa0b">
 
-      - 위와 같은 문제를 해결하기 위해서 POST로 주문후에 주문 결과 화면을 GET 메서드로 리다이렉트하고, 새로고침해도 결과 화면을 GET으로 조회하도록한다. 즉 중복 주문 대신에 결과 화면만 GET으로 다시 요청토록함. 아래 사진은 PRG적용 후의 흐름이다.
+      - 위와 같은 문제를 해결하기 위해서 POST로 주문후에 주문 결과 화면을 GET 메서드로 리다이렉트하고, 새로고침해도 결과 화면을 GET으로 조회하도록한다. 즉 중복 주문 대신에 결과 화면만 GET으로 다시 요청토록함.
+      - 아래 사진은 PRG적용 후의 흐름이다.
         <img width="1072" alt="사진5" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/bd463c66-8d16-41aa-ad61-066c5f7bffd2">
 
       - URL이 이미 POST에서 GET으로 리다이렉트되어 새로고침해도 GET으로 결과 화면만 조회된다.
