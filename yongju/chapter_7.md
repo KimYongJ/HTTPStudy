@@ -116,7 +116,7 @@
   - 웹 브라우저는 3xx 응답의 결과에 Location 헤더가 있으면, Location 위치로 자동 이동(리다이렉트)
   - 201 (Created)에서 사용될 경우 Location 헤더는 요청에 의해 생성된 리소스 URI를 의미한다.
   - 3xx (Redirection)에서 사용될 경우 요청을 자동으로 리디렉션하기 위한 대상 리소스를 가리킨다.
-  - [ [리다이렉트 설명] ](https://github.com/KimYongJ/HTTPStudy/blob/main/yongju/chapter_6.md)
+  - [ [리디렉션 설명] ](https://github.com/KimYongJ/HTTPStudy/blob/main/yongju/chapter_6.md)
 
 - Retry-After
   - 이 헤더는 유저 에이전트가 다음 요청을 하기까지 기다려야 하는 시간을 알려주는 역할이다.
