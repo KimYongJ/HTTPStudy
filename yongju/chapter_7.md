@@ -25,6 +25,8 @@
 - 표준 헤더가 많으며 필요시 임의의 헤더 추가가 가능하다.
   - 참고 : https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
 
+<br/>
+
 ## HTTP 헤더 분류
 
 ### 지금은 폐기된 RFC2616 스팩 설명
@@ -38,6 +40,8 @@
   - 메시지 본문 안에 엔티티 본문이 들어가있다. 엔티티 본문은 요청과 응답에서 전달할 실제 데이터이다.
    <img width="668" alt="사진1" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/15f18c8d-f720-4606-ae3b-b21590381a11">
 
+<br/>
+
 ### 현재 RFC7230~7235 등장
 
 - RFC723x 에서 변화한 내용
@@ -50,6 +54,8 @@
   - 표현 헤더는 표현 데이터를 해석할 수 있는 정보를 제공한다.(데이터 유형(html, json), 데이터 길이, 압축 정보 등등)
    <img width="663" alt="사진2" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/69249b88-967a-43d0-9a91-8c919282d5a3">
 
+<br/>
+
 ### RFC723x 헤더의 표현과 관련된 헤더들
 
 - 참고 : 표현 헤더는 전송과 응답에서 다 사용 가능하다.
@@ -58,6 +64,8 @@
 - Content-Encoding : 표현 데이터의 압축 방식을 명시한다. 데이터를 전달하는 곳에서 압축 후 인코딩 헤더를 추가하며 읽는 쪽에서는 인코딩 헤더의 정보로 압축을 해제 한다. ex) Content-Encoding : gzip|deflate|identity(압축안함을의미)
 - Content-Language : 표현 데이터의 자연 언어표시(한국어인지 영어인지 등..) ex) Content-Language: ko
 - Content-Length : 표현 데이터의 길이를 바이트 단위로 명시한다. Transfer-Encoding(전송 코딩)을 사용하면 Content-Length를 사용하면 안된다.
+
+<br/>
 
 ### 콘텐츠 네고시에이션(협상)헤더
 
@@ -88,12 +96,16 @@
   - 우선순위를 적을 때 구체적으로 적은 것이 우선한다.
   - ex) Accept: text/\*, text/plain, text/plain;format=flowed 이 있을 때 가장 구체적으로 적은 text/plain;format=flowed 가 가장 우선한다.
 
+<br/>
+
 ### 전송방식 관련 헤더
 
 - 단순 전송 : 메시지 바디 컨텍트에 대한 길이를 알 수 있을 때 사용하며 Content-Length 값을 명시한다.
 - 압축 전송 : Content-Encoding을 추가로 명시해야 한다.
 - 분할 전송 : Transfer-Encoding: chunked 라는 것을 명시하여 데이터를 전송한다. 예를 들어 큰 데이터를 보낼 때 5바이트씩 잘라 보내는 등 부분을 먼저 보내 클라이언트가 특정 부분 부분을 먼저 받아보는 것이다. 분할 전송시 주의할 점은 Content-Length값을 명시하면 안된다.
 - 원하는 범위 전송 : Content-Range: bytes 1001-2000 / 2000 형태로 명시하며 특정 바이트 부분을 명시하여 원하는 부분을 전송하는 것이다.
+
+<br/>
 
 ### 기타 헤더들
 
@@ -114,6 +126,8 @@
   - Response Header에 실어 보낸다.
   - ex) server : nginx
 - Date : 메시지가 발생한 날짜와 시간이며 응답에서 사용함
+
+<br/>
 
 ### 특별한 헤더들
 
@@ -138,6 +152,8 @@
   - ex) Retry-After: Fri, 31 Dec 1999 23:59:59 GMT(날짜 표기)
     Retry-After: 120 (초단위 표기)
 
+<br/>
+
 ### 인증 관련 헤더
 
 - Authorization
@@ -146,6 +162,8 @@
 - WWW-Authenticate
   - 접근은 했으나 인증에 문제가있을 경우 해당 헤더를 사용해 필요한 인증방법을 알려줄 수 있다. 401 Unauthorized 응답과 함께 사용한다.
   - ex) WWW-Authenticate: Newauth realm="apps", type=1, title="Login to \"apps\"",Basic realm="simple"
+
+<br/>
 
 ### 쿠키 관련 헤더
 
