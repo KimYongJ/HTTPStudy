@@ -22,7 +22,7 @@
   - Response 헤더 : 응답에 들어가는 메시지 이다.(예를 들어 Server 정보가 아파치이다 등..)
   - Entity 헤더 : 메시지 바디에 들어가는 내용과 관련된 정보를 담는 헤더이다 (Content-Type 이나 Content-Length 등..) 엔티티 헤더는 엔티티 본문의 데이터를 해석할 수 있는 정보를 제공한다.(데이터 유형(html, json), 데이터 길이, 압축 정보 등등..)
   - 메시지 본문 안에 엔티티 본문이 들어가있다. 엔티티 본문은 요청과 응답에서 전달할 실제 데이터이다.
-  - <img width="668" alt="사진1" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/15f18c8d-f720-4606-ae3b-b21590381a11">
+   <img width="668" alt="사진1" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/15f18c8d-f720-4606-ae3b-b21590381a11">
 
 ### 현재 RFC7230~7235 등장
 
@@ -34,7 +34,7 @@
   - 메시지 본문 = 페이로드(PayLoad)
   - 표현은 요청이나 응답에서 전달할 실제 데이터
   - 표현 헤더는 표현 데이터를 해석할 수 있는 정보를 제공한다.(데이터 유형(html, json), 데이터 길이, 압축 정보 등등)
-  - <img width="663" alt="사진2" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/69249b88-967a-43d0-9a91-8c919282d5a3">
+   <img width="663" alt="사진2" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/69249b88-967a-43d0-9a91-8c919282d5a3">
 
 ### RFC723x 헤더의 '표현'과 관련된 헤더들
 
@@ -54,13 +54,13 @@
 - Accept-Encoding : 클라이언트가 선호하는 압축 인코딩을 서버가 갖고있을 경우 요청
 - Accept-Language : 클라이언트가 선호하는 자연언어(한글, 영어)를 서버가 갖고있을 경우 요청
   - Accept-Language 적용 전
-  - <img width="829" alt="사진4" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/f38dfa99-6ec6-4ee4-b0eb-36dbed6472be">
+   <img width="829" alt="사진4" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/f38dfa99-6ec6-4ee4-b0eb-36dbed6472be">
 
   - Accept-Language 적용 후
-  - <img width="805" alt="사진3" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/2c061d2d-f8e4-424f-8adb-ad0bbb881ca6">
+   <img width="805" alt="사진3" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/2c061d2d-f8e4-424f-8adb-ad0bbb881ca6">
 
   - Accept-Language를 요청했으나 해당 언어가 없는 경우
-  - <img width="800" alt="사진5" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/8075406a-d8b1-4150-8f63-16877aa78d1c">
+   <img width="800" alt="사진5" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/8075406a-d8b1-4150-8f63-16877aa78d1c">
 
 - 협상과 우선순위
   - 위의 예시처럼 독일어, 영어만 지원하고 한국어가 없을 경우 언어에 대한 우선순위를 헤더에 실어 보낼 수 있다.
