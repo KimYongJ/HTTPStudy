@@ -22,7 +22,7 @@
   - Response 헤더 : 응답에 들어가는 메시지 이다.(예를 들어 Server 정보가 아파치이다 등..)
   - Entity 헤더 : 메시지 바디에 들어가는 내용과 관련된 정보를 담는 헤더이다 (Content-Type 이나 Content-Length 등..) 엔티티 헤더는 엔티티 본문의 데이터를 해석할 수 있는 정보를 제공한다.(데이터 유형(html, json), 데이터 길이, 압축 정보 등등..)
   - 메시지 본문 안에 엔티티 본문이 들어가있다. 엔티티 본문은 요청과 응답에서 전달할 실제 데이터이다.
-    (사진1)
+  - <img width="668" alt="사진1" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/15f18c8d-f720-4606-ae3b-b21590381a11">
 
 ### 현재 RFC7230~7235 등장
 
@@ -34,7 +34,7 @@
   - 메시지 본문 = 페이로드(PayLoad)
   - 표현은 요청이나 응답에서 전달할 실제 데이터
   - 표현 헤더는 표현 데이터를 해석할 수 있는 정보를 제공한다.(데이터 유형(html, json), 데이터 길이, 압축 정보 등등)
-    (사진2)
+  - <img width="663" alt="사진2" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/69249b88-967a-43d0-9a91-8c919282d5a3">
 
 ### RFC723x 헤더의 '표현'과 관련된 헤더들
 
@@ -54,18 +54,22 @@
 - Accept-Encoding : 클라이언트가 선호하는 압축 인코딩을 서버가 갖고있을 경우 요청
 - Accept-Language : 클라이언트가 선호하는 자연언어(한글, 영어)를 서버가 갖고있을 경우 요청
   - Accept-Language 적용 전
-    사진(4)
+  - <img width="829" alt="사진4" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/f38dfa99-6ec6-4ee4-b0eb-36dbed6472be">
+
   - Accept-Language 적용 후
-    사진(3)
+  - <img width="805" alt="사진3" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/2c061d2d-f8e4-424f-8adb-ad0bbb881ca6">
+
   - Accept-Language를 요청했으나 해당 언어가 없는 경우
-    사진(5)
+  - <img width="800" alt="사진5" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/8075406a-d8b1-4150-8f63-16877aa78d1c">
+
 - 협상과 우선순위
   - 위의 예시처럼 독일어, 영어만 지원하고 한국어가 없을 경우 언어에 대한 우선순위를 헤더에 실어 보낼 수 있다.
   - 우선순위는 q(Quality Values)로 표현하며 0~1 사이 값으로 표현하며 1이 가장 큰값이다. 생략하면 1이 default값이다.
   - ex) Accept-Language : ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7;
     - 해석 : 콤마(,)로 각각 구분, 언어코드(ex ko)와 세미콜론(;), q를 하나로 묶어 해석한다.
   - 아래 사진은 우선순위를 실어 보낸 후 응답 예시이다.
-    사진(6)
+  <img width="801" alt="사진6" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/d37c00f5-f0aa-4644-9311-bc3b17f309a2">
+
 - 협상과 우선순의 조건
   - 우선순위를 적을 때 구체적으로 적은 것이 우선한다.
   - ex) Accept: text/\*, text/plain, text/plain;format=flowed 이 있을 때 가장 구체적으로 적은 text/plain;format=flowed 가 가장 우선한다.
@@ -105,7 +109,7 @@
   - 하나의 서버가 여러 도메인을 처리해야 할 때
   - 하나의 IP주소에 여러 도메인이 적용되어 있을 때
   - 아래 사진은 하나의 서버에서 여러개의 어플리케이션을 실행할 때 Host 값으로 어떤 어플리케이션을 실행할지 찾는 예시이다.
-    (사진7)
+   <img width="949" alt="사진7" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/4908a8de-994f-40e8-8e20-16471a116521">
 
 - Location 헤더
 
@@ -132,7 +136,8 @@
 
 - 쿠키
   - 쿠키 사용이유 : 클라이언트와 서버가 요청과 응답을 주고 받은 후 연결이 끊어진다. 그렇기 때문에 서버는 클라이언트가 요청을 보낼 때 마다 이전 요청을 기억하지 못한다.(무상태 프로토콜) 이 때 사용자 정보등 식별자를 쿠키에 담아 통신시 확인함으로 사용자를 식별하도록 하였다. 모든 요청에 쿠키 정보는 자동으로 포함된다. 아래 사진은 로그인시 쿠키를 서버에서 클라이언트로 저장하는 예시이다.
-    (사진8)
+    <img width="893" alt="사진8" src="https://github.com/KimYongJ/HTTPStudy/assets/106525587/5268456e-3773-43a4-bb54-d4fb4dfd6979">
+
   - 쿠키의 쓰임 : 사용자 로그인 세션관리 , 광고 정보 트래킹등에 사용된다.
   - 쿠키의 특징 : 추가 정보를 담기 때문에 네트워크 트래픽이 추가된다. 보안에 민감한 데이터는 쿠키에 저장하면 안되며 최소한의 정보만 저장해야한다(세션 id, 인증 토큰).
   - Set-Cookie : 서버에서 클라이언트로 쿠키 전달(응답시 사용)
