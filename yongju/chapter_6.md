@@ -4,13 +4,14 @@
 
 # 목차
 
-- [1xx (Informational)]
-- [2xx (Successful)]
-- [3xx (Redirection)]
-- [4xx (Client Error)]
-- [5xx (Server Error)]
-- [모르는 상태코드가 전달 될 경우 해결 방법]
+- [1xx (Informational)](1xx-informational)
+- [2xx (Successful)](2xx-successful)
+- [3xx (Redirection)](3xx-redirection)
+- [4xx (Client Error)](4xx-client-error)
+- [5xx (Server Error)](5xx-server-error)
+- [모르는 상태코드가 전달 될 경우 해결 방법](5xx-server-error)
 
+<br/><br/>
 
 ## 클라이언트가 보낸 요청의 처리 상태를 응답에서 알려주는 기능
 
