@@ -2,6 +2,18 @@
 
 <br/>
 
+# 목차
+- [HTTP( Hyper Text Transfer Protocol )의 사용](#http-hyper-text-transfer-protocol-의-사용)
+- [HTTP 특징](#http-특징)
+    * [① 클라이언트 서버구조](#-클라이언트-서버구조)
+    * [② HTTP는 무상태 프로토콜(Stateless)](#-http는-무상태-프로토콜stateless)
+    * [③ 비연결성(connectionless)](#-비연결성connectionless)
+    * [④ HTTP 메시지](#-http-메시지)
+    * [⑤ 단순함, 확장가능](#-단순함-확장가능)
+- [정리](#정리)
+
+<br/><br/>
+
 ## HTTP( Hyper Text Transfer Protocol )의 사용
 
 - 지금은 모든것을 HTTP에 담아서 전송한다
